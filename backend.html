@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Czćionka -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Ikonka strony -->
+    <link rel="icon" href="apple.png">
+
+    <style>
+        .nav__item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .marg{
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 18px;
+        }
+        @media only screen and (max-width: 456px) {
+            .cc{
+                display: none;
+            }
+            .table-bck2{
+                margin-top: -10px;
+            }
+        }
+        
+    </style>
+    <title>iLove - backend</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <img id="changeable-image" class="nav__logo" src="apple.png" alt="apple logo" >
+           
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#manage-posts" class="nav__link active-link">
+                            <i class='bx bxs-edit nav__icon'></i>
+                            <span class="nav__name">Manage posts</span>
+                        </a>        
+                    </li>
+                    <li class="nav__item">
+                        <a href="#users" class="nav__link">
+                            <i class='bx bx-hive nav__icon'></i>
+                            <span class="nav__name">Manage users</span>
+                        </a>        
+                    </li>
+                    <li class="nav__item">
+                        <a href="#editprof" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>
+                            <span class="nav__name">Edit current profile</span>
+                        </a>        
+                    </li>
+                    <li class="nav__item">
+                        <a href="#stats" class="nav__link">
+                            <i class='bx bx-bar-chart-alt-2 nav__icon'></i>
+                            <span class="nav__name">Stats</span>
+                        </a>        
+                    </li>
+                    <li class="nav__item2">
+                        <a href="index.html" class="nav__link backend-button" >
+                            Logout
+                        </a>        
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        
+        <section class="container section section__height" id="manage-posts">
+            <div class="table-bck">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Post</th>
+                            <th>Content</th>
+                            <th class="cc">Photo</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MacBook</td>
+                            <td>Lorem ipsum dolor sit...</td>
+                            <td class="cc"><img class="img-edit" src="photo/4.jpg" alt="Photo post 1" ></td>
+                            <td><a href="edit.html" class="backend-button">Edit</a></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>iPhone</td>
+                            <td>Lorem ipsum dolor, sit...</td>
+                            <td class="cc"><img class="img-edit" src="photo/1.png" alt="Photo post 2"></td>
+                            <td><a href="edit.html" class="backend-button">Edit</a></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Apple Watch</td>
+                            <td>Lorem ipsum dolor sit...</td>
+                            <td class="cc"><img class="img-edit" src="photo/5.png" alt="Photo post 3"></td>
+                            <td><a href="edit.html" class="backend-button">Edit</a></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>iPad</td>
+                            <td>Lorem ipsum dolor sit...</td>
+                            <td class="cc"><img class="img-edit" src="photo/8.png" alt="Photo post 4"></td>
+                            <td><a href="edit.html" class="backend-button">Edit</a></td>
+                        </tr>
+                        
+                    </tbody>
+                    
+                    <tbody>
+                        <tr>
+                            <td>AirPods</td>
+                            <td>Lorem ipsum dolor sit...</td>
+                            <td class="cc"><img class="img-edit" src="photo/9.png" alt="Photo post 5"></td>
+                            <td><a href="edit.html" class="backend-button">Edit</a></td>
+                        </tr>
+                        
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>IMac</td>
+                            <td>Lorem, ipsum dolor sit...</td>
+                            <td class="cc"><img class="img-edit" src="photo/11.png" alt="Photo post 6"></td>
+                            <td><a href="edit.html" class="backend-button">Edit</a></td>
+                        </tr>
+                        
+                    </tbody>
+                    
+                </table>
+            </div>
+        </section>
+
+
+        <section class="container section section__height" id="users">
+            <div class="table-bck">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th class="cc">e-mail</th>
+                            <th>Phone</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Name Name</td>
+                            <td class="cc">example@example.com</td>
+                            <td>123-456-789</td>
+                            <td><a href="edit-user.html" class="backend-button avcsa">Edit</a></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Name Name</td>
+                            <td class="cc">example@example.com</td>
+                            <td>123-456-789</td>
+                            <td><a href="edit-user.html" class="backend-button avcsa">Edit</a></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Name Name</td>
+                            <td class="cc">example@example.com</td>
+                            <td>123-456-789</td>
+                            <td><a href="edit-user.html" class="backend-button avcsa">Edit</a></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Name Name</td>
+                            <td class="cc">example@example.com</td>
+                            <td>123-456-789</td>
+                            <td><a href="edit-user.html" class="backend-button avcsa">Edit</a></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Name Name</td>
+                            <td class="cc">example@example.com</td>
+                            <td>123-456-789</td>
+                            <td><a href="edit-user.html" class="backend-button avcsa">Edit</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="container section section__height" id="editprof">
+            <div class="button-edit-profile">
+                <a href="edit-current-profile.html" class="backend-button">Edit current profile</a>
+            </div>
+        </section>
+        <section class="container-form section section__height" id="stats">
+            <div class="table-bck2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Months</th>
+                            <th>Average Time Spent on Page (in minutes)</th>
+                            <th>Number of Page Views (Monthly)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>November</td>
+                            <td>5</td>
+                            <td>45 000</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>December</td>
+                            <td>7</td>
+                            <td>55 000</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Jenuary</td>
+                            <td>8</td>
+                            <td>60 000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            </div>
+            <button id="toggle-dark-mode" class="backend-button marg">Night mode</button>
+            
+
+
+        </section>
+        
+    </main>
+    <script>
+        document.getElementById('toggle-dark-mode').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            var image = document.getElementById('changeable-image');
+    
+            if (image.src.includes('apple.png')) {
+                image.src = 'apple2.png'; 
+                image.style.width = '29px';
+                image.style.marginLeft = '5px';
+            } else {
+                image.src = 'apple.png'; 
+                image.style.width = '40px';
+                image.style.marginLeft = '0px';
+            }
+            
+        });
+        document.getElementById('changeable-image').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        document.getElementById('changeable-image').addEventListener('click', function() {
+            if (this.src.includes('apple.png')) {
+                this.src = 'apple2.png'; 
+                this.style.width = '29px';
+                this.style.marginLeft = '5px';
+            } else {
+                this.src = 'apple.png'; 
+                this.style.width = '40px';
+                this.style.marginLeft = '0px';
+            }
+        });
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
